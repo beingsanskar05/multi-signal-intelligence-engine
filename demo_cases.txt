@@ -1,0 +1,122 @@
+## Case 1 — Single signal
+**Show anomaly_count: 1 
+risk_level: LOW 
+temporal_context: STABLE 
+anomaly_type: normal **
+
+[
+  {
+    "vessel_id": "V001",
+    "lat": 18.96,
+    "lon": 72.82,
+    "location": "Mumbai Coast",
+    "timestamp": "2026-01-03",
+    "signal_type": "temperature",
+    "value": 28.5
+  }
+]
+
+## Case 2 — Mixed signals
+
+ **Show anomaly_count: 2 
+risk_level: MEDIUM 
+temporal_context: RISING 
+signals: temperature + oil_spill **
+
+[
+  {
+    "vessel_id": "V001",
+    "lat": 18.96,
+    "lon": 72.82,
+    "location": "Mumbai Coast",
+    "timestamp": "2026-01-01",
+    "signal_type": "temperature",
+    "value": 28
+  },
+  {
+    "vessel_id": "V001",
+    "lat": 18.96,
+    "lon": 72.82,
+    "location": "Mumbai Coast",
+    "timestamp": "2026-01-02",
+    "signal_type": "oil_spill",
+    "value": 35
+  }
+]
+
+##Case 3 — Correlated signals
+
+**Shows anomaly_count: 3 
+risk_level: HIGH 
+temporal_context: RISING 
+signals: temperature + oil_spill + wind_speed **
+
+[
+  {
+    "vessel_id": "V003",
+    "lat": 15.00,
+    "lon": 70.00,
+    "location": "Arabian Sea",
+    "timestamp": "2026-01-01",
+    "signal_type": "temperature",
+    "value": 34
+  },
+  {
+    "vessel_id": "V003",
+    "lat": 15.00,
+    "lon": 70.00,
+    "location": "Arabian Sea",
+    "timestamp": "2026-01-02",
+    "signal_type": "oil_spill",
+    "value": 40
+  },
+  {
+    "vessel_id": "V003",
+    "lat": 15.00,
+    "lon": 70.00,
+    "location": "Arabian Sea",
+    "timestamp": "2026-01-03",
+    "signal_type": "wind_speed",
+    "value": 60
+  }
+]
+
+
+##Case4 -Temporal Increase
+
+**Shows anomaly_type: habitual_issue 
+anomaly_count: 3 
+risk_level: LOW 
+temporal_context: RISING 
+signals: only oil_spill **
+
+[
+  {
+    "vessel_id": "V002",
+    "lat": 18.96,
+    "lon": 72.82,
+    "location": "Mumbai Coast",
+    "timestamp": "2026-01-01",
+    "signal_type": "oil_spill",
+    "value": 20
+  },
+  {
+    "vessel_id": "V002",
+    "lat": 18.96,
+    "lon": 72.82,
+    "location": "Mumbai Coast",
+    "timestamp": "2026-01-02",
+    "signal_type": "oil_spill",
+    "value": 30
+  },
+  {
+    "vessel_id": "V002",
+    "lat": 18.96,
+    "lon": 72.82,
+    "location": "Mumbai Coast",
+    "timestamp": "2026-01-03",
+    "signal_type": "oil_spill",
+    "value": 40
+  }
+]
+

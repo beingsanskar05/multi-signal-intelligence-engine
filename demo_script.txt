@@ -1,0 +1,52 @@
+Hi, I’m Sanskar Pandey.
+
+I built a deterministic multi-signal intelligence engine that upgrades a single-signal system into a multi-signal reasoning system.
+
+The system takes multiple signals such as temperature, oil spill, and wind speed, groups them based on location and time, and applies rule-based logic to detect anomalies.
+
+It identifies patterns such as marine anomalies, habitual issues, and normal behavior.
+
+It also adds temporal context like rising or stable trends, spatial awareness of affected regions, and computes confidence and risk levels.
+
+Finally, it generates a structured, explainable output and exposes everything through a FastAPI endpoint.
+
+The system is fully deterministic, explainable, and production-ready.
+
+Now I will demonstrate a few test cases.
+
+
+
+Case 1 — Single Signal
+Expected:
+- anomaly_count: 1
+- risk_level: LOW
+- temporal_context: STABLE
+- anomaly_type: normal
+
+---
+
+Case 2 — Mixed Signals
+Expected:
+- anomaly_count: 2
+- risk_level: MEDIUM
+- temporal_context: RISING
+- signals: temperature + oil_spill
+
+---
+
+Case 3 — Correlated Signals
+Expected:
+- anomaly_count: 3
+- risk_level: HIGH
+- temporal_context: RISING
+- signals: temperature + oil_spill + wind_speed
+
+---
+
+Case 4 — Temporal Increase
+Expected:
+- anomaly_count: 3
+- risk_level: LOW
+- temporal_context: RISING
+- anomaly_type: habitual_issue
+- signals: oil_spill (repeated)
