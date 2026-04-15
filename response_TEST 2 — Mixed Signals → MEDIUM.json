@@ -1,0 +1,23 @@
+[
+  {
+    "situation_summary": "Marine Anomaly detected",
+    "anomaly_type": "marine_anomaly",
+    "anomaly_count": 2,
+    "risk_level": "MEDIUM",
+    "risk_score": 1,
+    "temporal_context": "RISING",
+    "spatial_context": [
+      "Mumbai Coast"
+    ],
+    "confidence": "HIGH",
+    "key_indicators": [
+      "temperature",
+      "oil_spill"
+    ],
+    "contributing_signals": [
+      "temperature",
+      "oil_spill"
+    ],
+    "explanation": "Marine Anomaly detected in Mumbai Coast with rising trend based on temperature, oil spill signals, confidence is high and risk level is medium."
+  }
+]

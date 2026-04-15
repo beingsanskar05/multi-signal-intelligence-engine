@@ -1,0 +1,23 @@
+[
+  {
+    "situation_summary": "Marine Anomaly detected",
+    "anomaly_type": "marine_anomaly",
+    "anomaly_count": 2,
+    "risk_level": "MEDIUM",
+    "risk_score": 0.65,
+    "temporal_context": "RISING",
+    "spatial_context": [
+      "Arabian Sea"
+    ],
+    "confidence": "HIGH",
+    "key_indicators": [
+      "temperature",
+      "oil_spill"
+    ],
+    "contributing_signals": [
+      "temperature",
+      "oil_spill"
+    ],
+    "explanation": "Marine Anomaly detected in Arabian Sea with rising trend based on temperature, oil spill signals, confidence is high and risk level is medium."
+  }
+]

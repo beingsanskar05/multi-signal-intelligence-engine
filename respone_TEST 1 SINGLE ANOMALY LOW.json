@@ -1,0 +1,21 @@
+[
+  {
+    "situation_summary": "Normal detected",
+    "anomaly_type": "normal",
+    "anomaly_count": 1,
+    "risk_level": "LOW",
+    "risk_score": 0.7,
+    "temporal_context": "STABLE",
+    "spatial_context": [
+      "Mumbai Coast"
+    ],
+    "confidence": "HIGH",
+    "key_indicators": [
+      "temperature"
+    ],
+    "contributing_signals": [
+      "temperature"
+    ],
+    "explanation": "Normal detected in Mumbai Coast with stable trend based on temperature signals, confidence is high and risk level is low."
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "situation_summary": "Habitual Issue detected",
+    "anomaly_type": "habitual_issue",
+    "anomaly_count": 3,
+    "risk_level": "LOW",
+    "risk_score": 0.7,
+    "temporal_context": "RISING",
+    "spatial_context": [
+      "Mumbai Coast"
+    ],
+    "confidence": "HIGH",
+    "key_indicators": [
+      "oil_spill"
+    ],
+    "contributing_signals": [
+      "oil_spill",
+      "oil_spill",
+      "oil_spill"
+    ],
+    "explanation": "Habitual Issue detected in Mumbai Coast with rising trend based on oil spill signals, confidence is high and risk level is low."
+  }
+]
